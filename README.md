@@ -1,6 +1,6 @@
 # 4007_sjx
 
-## Updates...
+#### Updates...
 Added Java GUI (haven't combined with main yet...)
 
 JFormDesigner was used to write (make...) the interface.
