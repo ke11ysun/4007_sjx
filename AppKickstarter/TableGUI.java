@@ -38,6 +38,8 @@ public class TableGUI extends JPanel {
         frame1 = new JFrame();
         tabbedPane1 = new JTabbedPane();
         panel2 = new JPanel();
+        scrollPane4 = new JScrollPane();
+        table3 = new JTable();
         panel3 = new JPanel();
         scrollPane2 = new JScrollPane();
         table2 = new JTable();
@@ -81,15 +83,56 @@ public class TableGUI extends JPanel {
                     panel2.setLayout(new MigLayout(
                         "hidemode 3",
                         // columns
-                        "[fill]" +
-                        "[fill]" +
-                        "[fill]" +
-                        "[fill]" +
                         "[fill]",
                         // rows
-                        "[]" +
-                        "[]" +
                         "[]"));
+
+                    //======== scrollPane4 ========
+                    {
+
+                        //---- table3 ----
+                        table3.setModel(new DefaultTableModel(
+                            new Object[][] {
+                                {"Successful Trans", 0, null, null, null, null, null, null, null},
+                                {"Failed Trans (Waiting for a ticket)", 0, null, null, null, null, null, null, null},
+                                {"Failed Trans (Waiting for a table)", 0, null, null, null, null, null, null, null},
+                                {"Failed Trans (Waiting for table Assignment)", 0, null, null, null, null, null, null, null},
+                                {"Failed Trans (Queue too long)", 0, null, null, null, null, null, null, null},
+                                {"Early Leave Trans", 0, null, null, null, null, null, null, null},
+                                {"Overall Trans", 0, null, null, null, null, null, null, null},
+                            },
+                            new String[] {
+                                "Name", "Count", "Percent", "NPers", "Waiting T", "Eating T", "Transaction T", "Spending", "Spending/Pers"
+                            }
+                        ) {
+                            Class<?>[] columnTypes = new Class<?>[] {
+                                String.class, Integer.class, Float.class, Float.class, Float.class, Float.class, Float.class, Float.class, Float.class
+                            };
+                            @Override
+                            public Class<?> getColumnClass(int columnIndex) {
+                                return columnTypes[columnIndex];
+                            }
+                        });
+                        {
+                            TableColumnModel cm = table3.getColumnModel();
+                            cm.getColumn(0).setPreferredWidth(160);
+                            cm.getColumn(0).setCellEditor(new DefaultCellEditor(
+                                new JComboBox(new DefaultComboBoxModel(new String[] {
+                                    "Successful Trans",
+                                    "Failed Trans (Waiting for a ticket)",
+                                    "Failed Trans (Waiting for a table)",
+                                    "Failed Trans (Waiting for table Assignment)",
+                                    "Failed Trans (Queue too long)",
+                                    "Early Leave Trans",
+                                    "Overall Trans"
+                                }))));
+                        }
+                        table3.setRowHeight(30);
+                        table3.setPreferredSize(new Dimension(675, 212));
+                        table3.setFont(new Font(".SF NS Text", Font.PLAIN, 10));
+                        scrollPane4.setViewportView(table3);
+                    }
+                    panel2.add(scrollPane4, "cell 0 0,width 700:800:800");
                 }
                 tabbedPane1.addTab("Statistics", panel2);
 
@@ -236,6 +279,8 @@ public class TableGUI extends JPanel {
     private JFrame frame1;
     private JTabbedPane tabbedPane1;
     private JPanel panel2;
+    private JScrollPane scrollPane4;
+    private JTable table3;
     private JPanel panel3;
     private JScrollPane scrollPane2;
     private JTable table2;

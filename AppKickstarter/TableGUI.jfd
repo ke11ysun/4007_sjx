@@ -19,10 +19,140 @@ new FormModel {
 				"alignmentY": 0.0f
 				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
 					"$layoutConstraints": "hidemode 3"
-					"$columnConstraints": "[fill][fill][fill][fill][fill]"
-					"$rowConstraints": "[][][]"
+					"$columnConstraints": "[fill]"
+					"$rowConstraints": "[]"
 				} ) {
 					name: "panel2"
+					add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+						name: "scrollPane4"
+						add( new FormComponent( "javax.swing.JTable" ) {
+							name: "table3"
+							"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector {
+								add( new java.util.Vector {
+									add( "Successful Trans" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Failed Trans (Waiting for a ticket)" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Failed Trans (Waiting for a table)" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Failed Trans (Waiting for table Assignment)" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Failed Trans (Queue too long)" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Early Leave Trans" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+								add( new java.util.Vector {
+									add( "Overall Trans" )
+									add( 0 )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+									add( null )
+								} )
+							}, new java.util.Vector {
+								add( "Name" )
+								add( "Count" )
+								add( "Percent" )
+								add( "NPers" )
+								add( "Waiting T" )
+								add( "Eating T" )
+								add( "Transaction T" )
+								add( "Spending" )
+								add( "Spending/Pers" )
+							}, new java.util.Vector {
+								add( class java.lang.String )
+								add( class java.lang.Integer )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+								add( class java.lang.Float )
+							}, new java.util.Vector {
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							}, new java.util.Vector {
+								add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "Successful Trans", "Failed Trans (Waiting for a ticket)", "Failed Trans (Waiting for a table)", "Failed Trans (Waiting for table Assignment)", "Failed Trans (Queue too long)", "Early Leave Trans", "Overall Trans" ], 160, 0, 0, true ) )
+								add( new com.jformdesigner.model.SwingTableColumn( new java.lang.Object[ "0" ], 0, 0, 0, true ) )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+								add( null )
+							} )
+							"rowHeight": 30
+							"preferredSize": new java.awt.Dimension( 675, 212 )
+							"font": new java.awt.Font( ".SF NS Text", 0, 10 )
+						} )
+					}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+						"value": "cell 0 0,width 700:800:800"
+					} )
 				}, new FormLayoutConstraints( null ) {
 					"title": "Statistics"
 				} )
