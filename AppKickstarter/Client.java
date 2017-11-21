@@ -63,7 +63,7 @@ public class Client extends javax.swing.JFrame implements Runnable {
 
     void send(String msg) throws IOException {
         System.out.println(msg.length());
-        out.writeInt(msg.length());
+        out.writeInt(1024);
         out.writeBytes(msg);
         out.flush();
     }
@@ -221,7 +221,7 @@ public class Client extends javax.swing.JFrame implements Runnable {
     private void connectActionPerformed(java.awt.event.ActionEvent evt) {
         // TODO add your handling code here:
         try {
-            client.connect("127.0.0.1", 7777);
+            client.connect("127.0.0.1", 54321);
             client.setVisible(true);
             client.usrVisible(false);
         } catch (IOException ex) {
