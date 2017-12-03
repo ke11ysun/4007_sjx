@@ -9,9 +9,9 @@ Sun Jingxuan, Li Shiying, Zou Xueyan, Zhou Yunchang, Huang Hao, Liu Ruipeng
 | Sun Jingxuan |  | :japanese_ogre: | :japanese_ogre: |  | :japanese_ogre: |  |  | :japanese_ogre: |
 | Li Shiying |  |  | :octocat: | :octocat: | :octocat: | :octocat: |  |  |
 | Zou Xueyan | :cat2: |  | :cat2: |  |  | :cat2: | :cat2: |  |
-| Zhou Yunchang | :trollface: |  | :trollface: |  |  |  |  |  |
-| Huang Hao |  |  | :trollface: |  |  |  |  | :trollface: |
-| Liu Ruipeng |  |  | :trollface: |  |  |  |  |  |
+| Zhou Yunchang | :full_moon: |  | :full_moon: |  |  |  |  |  |
+| Huang Hao |  |  | :first_quarter_moon: |  |  |  |  | :first_quarter_moon: |
+| Liu Ruipeng |  |  | :new_moon: |  |  |  |  |  |
 | Joe | :alien: |  |  |  |  |  |  |  |
 
 ## Explanation of the System
