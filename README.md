@@ -4,14 +4,14 @@
 Sun Jingxuan, Li Shiying, Zou Xueyan, Zhou Yunchang, Huang Hao, Liu Ruipeng
 
 ## Team Contribution
-| Team Member | System Design | Main System | Debug | GUI | Javadoc | ReadMe | Test System | Communication |
+| Team Member | System Design | Main System | Debug | GUI | Javadoc | ReadMe | Test System | Test Other Group |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Sun Jingxuan |  | :japanese_ogre: | :japanese_ogre: |  | :japanese_ogre: |  |  | :japanese_ogre: |
 | Li Shiying |  |  | :octocat: | :octocat: | :octocat: | :octocat: |  |  |
 | Zou Xueyan | :cat2: |  | :cat2: |  |  | :cat2: | :cat2: |  |
-| Zhou Yunchang | :full_moon: |  | :full_moon: |  |  |  |  |  |
+| Zhou Yunchang | :full_moon: |  | :full_moon: |  |  |  |  | :full_moon: |
 | Huang Hao |  |  | :first_quarter_moon: |  |  |  |  | :first_quarter_moon: |
-| Liu Ruipeng |  |  | :new_moon: |  |  |  |  |  |
+| Liu Ruipeng |  |  | :new_moon: |  |  |  |  | :new_moon: |
 | Joe | :alien: |  |  |  |  |  |  |  |
 
 ## Explanation of the System
